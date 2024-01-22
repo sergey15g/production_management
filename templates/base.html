@@ -1,0 +1,25 @@
+<!-- templates/base.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Production Management{% endblock %}</title>
+    <!-- Здесь вы можете добавить ссылки на ваши стили CSS, если они есть -->
+</head>
+<body>
+    <header>
+        <h1>Production Management</h1>
+        <!-- Здесь может быть ваша навигационная панель или другие элементы шапки -->
+    </header>
+    
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer>
+        <!-- Здесь может быть ваш футер -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<!-- templates/add_production_area.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+  <h2>Add Production Area</h2>
+  <form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form|crispy }}
+    <button type="submit">Add Production Area</button>
+  </form>
+{% endblock %}
